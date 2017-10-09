@@ -1,0 +1,44 @@
+{
+  "name": "ethical-server-middleware-react-redux",
+  "version": "0.0.6",
+  "description": "React & Redux based server side renderer for the Ethical framework.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "npm run build-test && nutra --config ./nutra.config.js && npm run build",
+    "test-debugger": "DEBUG=1 node --inspect-brk ./node_modules/.bin/nutra --config ./nutra.config.js",
+    "build": "babel ./src --out-dir ./dist --source-maps",
+    "build-test": "babel ./test/files/src --out-dir ./test/files/dist --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethically/ethical-server-middleware-react-redux.git"
+  },
+  "author": "m-a-r-c-e-l-i-n-o <me@marceli.no>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "ethical-react-component-higher-order-promise": "0.0.0",
+    "ethical-react-component-root": "0.0.0",
+    "ethical-utility-server": "0.0.0",
+    "node-fetch": "^1.7.3",
+    "nutra": "0.0.14",
+    "nutra-jasmine-coverage-babel-preset": "0.0.10"
+  },
+  "dependencies": {
+    "ethical-react-component-provider-promise": "0.0.0",
+    "ethical-scripts-frontend": "0.0.5",
+    "ethical-utility-path": "0.0.0",
+    "ethical-utility-promise-collector": "0.0.0",
+    "graphql": "^0.9.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-helmet": "^5.2.0",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0"
+  }
+}
